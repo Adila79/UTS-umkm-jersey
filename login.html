@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pemesanan jersey Adila</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Adilajersey</h1>
+        <p>Pilih jersey impianmu dengan harga terbaik!</p>
+    </header>
+
+    <section class="products">
+        <h2>Daftar Jersey</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="bola.jpg" alt="Jersey 1">
+                <h3>Jersey bola</h3>
+                <p>Rp 200.000</p>
+            </div>
+            <div class="product">
+                <img src="basket.jpg" alt="Jersey 2">
+                <h3>Jersey Basket</h3>
+                <p>Rp 250.000</p>
+            </div>
+            <div class="product">
+                <img src="esport1.jpg" alt="Jersey 3">
+                <h3>Jersey Esports</h3>
+                <p>Rp 300.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-form">
+        <h2>Formulir Pembelian</h2>
+        <form action="/order" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat Pengiriman</label>
+                <textarea id="address" name="address" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="jersey">Pilih Jersey</label>
+                <select id="jersey" name="jersey" required>
+                    <option value="" disabled selected>Pilih Jersey</option>
+                    <option value="jersey_a">Jersey Bola - Rp 200.000</option>
+                    <option value="jersey_b">Jersey Basket - Rp 250.000</option>
+                    <option value="jersey_c">Jersey Esports - Rp 300.000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Ukuran</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Pilih Ukuran</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Beli Sekarang</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Adila Jersey. Semua hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
